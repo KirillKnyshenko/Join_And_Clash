@@ -778,6 +778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9130362978748200399}
   - component: {fileID: 5706389945859037810}
+  - component: {fileID: 1163408415100863173}
   m_Layer: 0
   m_Name: Group1
   m_TagString: Untagged
@@ -903,6 +904,22 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0007936135, y: 0.041607738, z: 0.013019625}
     m_Extent: {x: 0.06949016, y: 0.1763598, z: 0.07858497}
   m_DirtyAABB: 0
+--- !u!114 &1163408415100863173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3876522357832346355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f1766c9a99e5a419aebfc772c44e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skinnedMeshRenderer: {fileID: 5706389945859037810}
+  _animator: {fileID: 8435294046396348645}
+  _stickMan: {fileID: 8435294046396348646}
+  _material: {fileID: 2100000, guid: dfabccdf2c3593649a370dd844b9c44f, type: 2}
 --- !u!1 &3949389966527403435
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,8 +2200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab07b0d19d5af634ea25d1ea81b7baf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 8435294046396348647}
-  Animator: {fileID: 8435294046396348645}
 --- !u!1 &8796989822167623401
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StickMan : MonoBehaviour
 {
-    [SerializeField] public Rigidbody rb;
-    [SerializeField] public Animator Animator;
+    public UnityEvent OnRecruited;
+    public bool IsRecruited;
+
+    private void Start() {
+        if (IsRecruited)
+        {
+            Recruite();
+        }
+    }
+    
+    public void Recruite() {
+        IsRecruited = true;
+        OnRecruited?.Invoke();
+    }
 }
