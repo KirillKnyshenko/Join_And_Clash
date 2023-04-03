@@ -5,6 +5,7 @@ public class StickManVisual : MonoBehaviour
 {
     private const string PLAYER_RUN = "run";
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRenderer;
+    [SerializeField] private GameObject _deathParticle;
     [SerializeField] private Animator _animator;
     [SerializeField] private StickMan _stickMan;
     [SerializeField] private Material _material;

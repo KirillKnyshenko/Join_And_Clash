@@ -2154,7 +2154,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 84
-  m_CollisionDetection: 3
+  m_CollisionDetection: 0
 --- !u!136 &8435294046396348644
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2200,6 +2200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab07b0d19d5af634ea25d1ea81b7baf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnRecruited:
+    m_PersistentCalls:
+      m_Calls: []
+  IsRecruited: 0
 --- !u!1 &8796989822167623401
 GameObject:
   m_ObjectHideFlags: 0

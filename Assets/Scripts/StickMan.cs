@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class StickMan : MonoBehaviour
 {
     public UnityEvent OnRecruited;
+    private int _health;
     public bool IsRecruited;
 
     private void Start() {
