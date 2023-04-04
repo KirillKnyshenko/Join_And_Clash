@@ -11,7 +11,7 @@ public class GameInput : MonoBehaviour
 
     private bool _moveByTouch;
 
-    private void Start() {
+    public void Initialize() {
         Instance = this;
     }
 

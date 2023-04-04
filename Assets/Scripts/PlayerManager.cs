@@ -14,7 +14,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float _runSpeed, _velocity, _swipeSpeed, _roadSpeed;
     [SerializeField] private Transform _roadTransform;
 
-    private void Start() {
+    public void Initialize() {
         Instance = this;
 
         GameInput.Instance.OnMove.AddListener(GameInput_OnMove);
@@ -22,8 +22,6 @@ public class PlayerManager : MonoBehaviour
 
         RecruitmentsList.Add(transform.GetChild(0).GetComponent<Recruitment>());
     }
-
-
 
     private void Update() {
         if (_moveByTouch)

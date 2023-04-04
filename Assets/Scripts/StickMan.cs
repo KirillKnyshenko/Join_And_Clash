@@ -10,7 +10,7 @@ public class StickMan : MonoBehaviour
     private int _health;
     public bool IsRecruited;
 
-    private void Start() {
+    public void Initialize() {
         if (IsRecruited)
         {
             Recruite();
